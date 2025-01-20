@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Encryption/Decryption System</title>
+</head>
+
+<body>
+    <h1>File Encryption/Decryption System</h1>
+    <form action="/generate_key" method="POST">
+        <button type="submit">Generate Key</button>
+    </form>
+    <hr>
+    <h2>Encrypt a File</h2>
+    <form action="/encrypt" method="POST" enctype="multipart/form-data">
+        <label for="file">Choose file:</label>
+        <input type="file" name="file" id="file" required>
+        <button type="submit">Encrypt</button>
+    </form>
+    <hr>
+    <h2>Decrypt a File</h2>
+    <form action="/decrypt" method="POST" enctype="multipart/form-data">
+        <label for="file">Choose file:</label>
+        <input type="file" name="file" id="file" required>
+        <button type="submit">Decrypt</button>
+    </form>
+</body>
+
+</html>
