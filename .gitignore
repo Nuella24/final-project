@@ -1,0 +1,5 @@
+# key files
+*.key
+
+# log files
+*.log
